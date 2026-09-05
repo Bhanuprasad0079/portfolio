@@ -10,7 +10,14 @@ const featured = [
     cover: "/images/agro.png",
     github: "https://github.com/Bhanuprasad0079/AgroNXT",
     external: "https://agro-nxt.vercel.app/",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "SQLite"],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "SQLite",
+    ],
     desc: (
       <>
         A smart farming decision and planning platform that helps farmers make
@@ -44,7 +51,7 @@ const other = [
     title: "AgroNXT",
     desc: "A full-stack smart farming decision and planning system that provides crop recommendations, weather insights, soil health analysis, disease detection, and farm profitability estimates.",
     tech: ["Next.js", "TypeScript", "Python", "FastAPI"],
-    links: ["github", "external"],                // ← added "external"
+    links: ["github", "external"], // ← added "external"
     github: "https://github.com/Bhanuprasad0079/AgroNXT",
     url: "https://agro-nxt.vercel.app/",
   },
@@ -52,7 +59,7 @@ const other = [
     title: "Grievance Management System",
     desc: "A full-stack web application for submitting, tracking, and managing grievances through a streamlined digital workflow.",
     tech: ["Next.js", "ASP.NET Core", "PostgreSQL"],
-    links: ["github", "external"],                // ← added "external"
+    links: ["github", "external"], // ← added "external"
     github: "https://github.com/Bhanuprasad0079/GMS",
     url: "https://gms-sigma.vercel.app/",
   },
@@ -60,7 +67,7 @@ const other = [
     title: "Expense Tracker",
     desc: "A simple web application for tracking and managing personal expenses with an intuitive interface and dynamic expense calculations.",
     tech: ["HTML", "CSS", "JavaScript"],
-    links: ["github", "external"],                // ← added "external"
+    links: ["github", "external"], // ← added "external"
     github: "https://github.com/Bhanuprasad0079/expensetracker",
     url: "https://expense-tracker-app-three-beryl.vercel.app/login",
   },
@@ -99,13 +106,19 @@ export default function Projects() {
               <p className="project-overline">Featured Project</p>
 
               <h3 className="project-title">
-                <a href={p.external} target="_blank" rel="noreferrer">{p.title}</a>
+                <a href={p.external} target="_blank" rel="noreferrer">
+                  {p.title}
+                </a>
               </h3>
 
-              <div className="project-desc"><p>{p.desc}</p></div>
+              <div className="project-desc">
+                <p>{p.desc}</p>
+              </div>
 
               <ul className="project-tech">
-                {p.tech.map((t) => (<li key={t}>{t}</li>))}
+                {p.tech.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
               </ul>
 
               <div className="project-links">
@@ -133,7 +146,12 @@ export default function Projects() {
 
               {p.cta && (
                 <div className="project-cta">
-                  <a className="btn small" href={p.external} target="_blank" rel="noreferrer">
+                  <a
+                    className="btn small"
+                    href={p.external}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {p.cta}
                   </a>
                 </div>
@@ -170,13 +188,17 @@ export default function Projects() {
               </div>
 
               <h4 className="card-title">
-                <a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
+                <a href={p.url} target="_blank" rel="noreferrer">
+                  {p.title}
+                </a>
               </h4>
 
               <p className="card-desc">{p.desc}</p>
 
               <ul className="card-tech">
-                {p.tech.map((t) => (<li key={t}>{t}</li>))}
+                {p.tech.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
               </ul>
             </div>
           </Fade>
