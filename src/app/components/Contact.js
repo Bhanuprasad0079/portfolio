@@ -12,8 +12,8 @@ export default function Contact() {
         <p className="contact-overline">04. What's Next?</p>
         <h2 className="contact-title">Get In Touch</h2>
         <p>
-          Although I'm not currently looking for any new opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          I am currently actively looking for new roles in software development. 
+    If you have an opportunity that aligns with my skills, or if you simply want to connect, my inbox is always open!
         </p>
         <button className="btn" onClick={openContact}>Say Hello</button>
       </Fade>
